@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <vue-dadata
+    <dadata-suggestion
       ref="dadata"
       :token="token"
       @handle-error="handleError"
@@ -12,18 +12,18 @@
       highlight-tag="span"
       :on-change="changed"
       :location-options="locations"
-    ></vue-dadata>
+    ></dadata-suggestion>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue, Ref } from 'vue-property-decorator';
-import VueDadata from '@/components/VueDadata.vue';
+import DadataSuggestion from '@/components/DadataSuggestion.vue';
 
 @Component({
   name: 'App',
   components: {
-    'vue-dadata': VueDadata,
+    'dadata-suggestion': DadataSuggestion,
   },
 })
 export default class App extends Vue {
