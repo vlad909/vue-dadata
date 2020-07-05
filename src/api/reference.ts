@@ -9,7 +9,7 @@ import {
 
 const BASE_URL = 'https://suggestions.dadata.ru/suggestions/api/4_1/rs';
 
-const getHeders = (token: string) => ({
+const getHeaders = (token: string) => ({
   headers: {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
@@ -19,7 +19,7 @@ const getHeders = (token: string) => ({
 
 const getConfig = (token: string, baseUrl: string) => ({
   baseURL: baseUrl,
-  ...getHeders(token),
+  ...getHeaders(token),
 });
 
 export const getAddressByGeolocate = async ({
