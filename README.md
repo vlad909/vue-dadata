@@ -12,12 +12,7 @@ It's a vue component for hinting addresses using [DaData.ru](https://dadata.ru).
 [npm package](https://www.npmjs.com/package/vue-dadata)
 
 ```bash
-$ npm install vue-dadata --save
-```
-
-[yarn package](https://yarnpkg.com/en/package/vue-dadata)
-```bash
-$ yarn add vue-dadata
+$ npm install @itadori/vue-dadata --save
 ```
 
 ## Usage
@@ -25,7 +20,7 @@ $ yarn add vue-dadata
 ### Global
 
 ```js
-import VueDadata from 'vue-dadata'
+import VueDadata from '@itadori/vue-dadata'
 
 Vue.use(VueDadata)
 ```
@@ -40,7 +35,7 @@ Vue.use(VueDadata)
 </template>
 
 <script>
-import VueDadata from 'vue-dadata'
+import VueDadata from '@itadori/vue-dadata'
 
 export default {
   name: 'VueDadataTest',
