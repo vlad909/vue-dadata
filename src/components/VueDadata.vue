@@ -182,7 +182,9 @@ export default class VueDadata extends Vue {
   }
 
   public async onSuggestionClick(index: number) {
-    await this.selectSuggestion(index);
+      setTimeout(async ()=>{
+       await this.selectSuggestion(index);
+      },10);
   }
 
   private async fetchSuggestions(count?: number): Promise<DadataSuggestion[]> {
