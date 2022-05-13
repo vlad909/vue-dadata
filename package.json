@@ -1,5 +1,5 @@
 {
-  "name": "vue-dadata",
+  "name": "@itadori/ivue-dadata",
   "version": "1.4.13",
   "description": "Vue component for hinting addresses using dadata.ru",
   "main": "dist/vuedadatacomponent.umd.js",
